@@ -1,6 +1,6 @@
 {
   "header": "LingoTherapist 🤖",
-  "welcome": "¡Hola! Soy tu terapeuta del habla. ¿Cómo puedo ayudarte?",
+  "welcome": "¡Hola! ¿Cómo puedo ayudarte hoy?",
   "input_placeholder": "Escribe tu mensaje...",
   "send_button": "Enviar"
 }
