@@ -2,6 +2,7 @@
 
 **AI Speech Therapist with Real-time Multilingual Support**  
 Built with **Spring Boot + Groq AI + Lingo.dev CLI** for the **Lingo Hackathon**.
+**Built with help from Ai Tools(Chat gpt) for — step-by-step mentor for code, i18n, and CI/CD.**
 
 
 [![Java](https://img.shields.io/badge/Java-21-blue)](https://www.oracle.com/java/)
