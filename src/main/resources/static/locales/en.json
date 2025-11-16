@@ -1,6 +1,6 @@
 {
   "header": "LingoTherapist 🤖",
-  "welcome": "Hello! I'm your speech therapist. How can I help?",
+  "welcome": "Hi! How can I help today?",
   "input_placeholder": "Type your message...",
   "send_button": "Send"
 }
