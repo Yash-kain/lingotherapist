@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lingo Therapist Demo</title>
+</head>
+<body>
+<h1>Chat with AI Therapist</h1>
+
+<input id="msg" placeholder="Type your message">
+<button onclick="sendMessage()">Send</button>
+
+<p><b>Reply:</b> <span id="reply"></span></p>
+
+<script>
+    async function sendMessage() {
+        let message = document.getElementById("msg").value;
+
+        let response = await fetch("/api/chat", {
+            method: "POST",
+            headers: {
+                "Content-Type": "text/plain"
+            },
+            body: message
+        });
+
+        let reply = await response.text();
+        document.getElementById("reply").innerText = reply;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://lingo.dev/schema/i18n.json",
+  "version": "1.10",
+  "locale": {
+    "source": "en",
+    "targets": ["hi", "es", "ta"]
+  },
+  "buckets": {
+    "json": {
+      "include": ["/mnt/c/Users/guest 1/Desktop/Hackathon/lingotherapist/src/main/resources/static/locales/[locale].json"]
+    }
+  }
+}
