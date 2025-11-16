@@ -28,14 +28,6 @@ Built with **Spring Boot + Groq AI + Lingo.dev CLI** for the **Lingo Hackathon**
 - **No backend database** — pure AI
 
 ---
-
-## 🎥 **Demo**
-
-![Demo](demo.gif)  
-*(Replace with your GIF — record with [ScreenToGif](https://www.screentogif.com/))*
-
----
-
 ## 🛠 **Tech Stack**
 
 | Layer | Tech |
@@ -57,4 +49,3 @@ echo "GROQ_API_KEY=gsk-your-key" > .env
 mvnw spring-boot:run
 
 
-**Built with help from Grok (xAI's AI assistant) — step-by-step mentor for code, i18n, and CI/CD.**
