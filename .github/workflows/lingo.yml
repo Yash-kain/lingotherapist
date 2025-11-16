@@ -1,25 +1,19 @@
-name: Lingo Translate
+name: Lingo.dev Auto-Translation
 
 on:
   push:
-    paths:
-      - 'src/main/resources/static/locales/en.json'
+    branches: [main]
+
+permissions:
+  contents: write
 
 jobs:
   translate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - run: npx lingo.dev@latest run
+      - uses: actions/checkout@v4
+
+      - name: Run Lingo.dev CI/CD
+        run: npx lingo.dev@latest ci --api-key "$LINGODOTDEV_API_KEY"
         env:
-          LINGODOTDEV_API_KEY: ${{ secrets.api_o1kdbp728kkbkxt2e6u8tvft }}
-      - run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add src/main/resources/static/locales/*.json
-          git commit -m "chore: auto-translate with Lingo.dev CLI" || exit 0
-          git push
+          LINGODOTDEV_API_KEY: ${{ secrets.LINGODOTDEV_API_KEY }}
